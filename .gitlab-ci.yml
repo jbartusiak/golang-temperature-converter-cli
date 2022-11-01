@@ -1,0 +1,14 @@
+default:
+  tags:
+    - golang-1.19
+
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - go build -o dist/
+  artifacts:
+    paths:
+      - dist
